@@ -14,6 +14,7 @@ defmodule MyAppUmbrella.Umbrella.MixProject do
   defp deps do
     [
       # Required to run "mix format" on ~H/.heex files from the umbrella root
+      {:igniter, "~> 0.6", only: [:dev, :test]},
       {:phoenix_live_view, ">= 0.0.0"}
     ]
   end
